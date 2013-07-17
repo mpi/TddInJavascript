@@ -3,7 +3,7 @@ define(["jquery", "hello-world" ], function($, hello) {
 	describe("hello-world", function() {
 
 		var helloDiv = $("<div id='hello'/>");
-
+		
 		it("has a button", function() {
 
 			// given:

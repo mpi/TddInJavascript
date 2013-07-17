@@ -3,6 +3,7 @@ require.config({
 	paths : {
 		underscore : 'http://underscorejs.org/underscore-min',
 		jquery : 'http://code.jquery.com/jquery-1.10.1.min'
+		
 	},
 	shim : {
 		underscore : {
@@ -14,7 +15,8 @@ require.config({
 	}
 });
 
-require(["hello-world"], function(hello) {
-
-		hello.loadTo("#hello");
+require(["todo-ui", "todo-list", "jquery"], function(TodoListUi, TodoList, $) {
+		var todoList = new TodoList();
+		var todoUi = new TodoListUi(todoList);
+		todoUi.loadTo($("#todo-list-container"));
 });
