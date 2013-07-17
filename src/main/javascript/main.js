@@ -14,9 +14,7 @@ require.config({
 	}
 });
 
-require(["hello-world", "counter"], function(hello, counter) {
+require(["hello-world"], function(hello) {
 
 		hello.loadTo("#hello");
-		counter.loadTo("#counter");
-
 });

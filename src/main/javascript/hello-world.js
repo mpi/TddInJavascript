@@ -1,4 +1,4 @@
-define([], function() {
+define(["jquery"], function($) {
 
 	var loadTo = function(element) {
 
@@ -7,7 +7,6 @@ define([], function() {
 			alert("Hello, World!");
 
 		}).appendTo(element);
-		
 	};
 
 	return {
