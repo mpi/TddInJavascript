@@ -1,6 +1,7 @@
 paths: {
 	underscore: 'http://underscorejs.org/underscore-min',
-	jquery: 	'http://code.jquery.com/jquery-1.10.1.min'
+	jquery: 	'http://code.jquery.com/jquery-1.10.1.min',
+	sinon:		'http://sinonjs.org/releases/sinon-1.7.3'
 },
 shim: {
 	underscore: { 
@@ -8,5 +9,8 @@ shim: {
 	},
 	jquery: {
 		exports: "$"
+	},
+	sinon: {
+		exports: "sinon"
 	}
 }

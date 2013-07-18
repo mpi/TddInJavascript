@@ -135,8 +135,7 @@ define(["jquery", "todo-ui", "todo-list", "todo-item"], function($, TodoListUi, 
 				expect(element("li input[type='text']").css("display")).toEqual("none");
 				expect(element("li span").css("display")).not.toEqual("none");
 			})
-			
-			
+
 			function element(selector){
 				return $(container).find(selector);
 			};
